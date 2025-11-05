@@ -10,9 +10,10 @@ Our capstone project uses **neuromaps** to evaluate how surfaced-based **human e
 This repo provides reproducible code for:
 
 - **Fetching** publicly available cortical maps from the `neuromaps.datasets` API (e.g. Hill et al. 2010, Raichle et al. 2010).
-- **Resampling** them to a common surface space (fsLR, 164k or 32k mesh).
-- **Comparing** the **evolutionary expansion map** (`hill2010:evoexp`) with a set of **target maps** (e.g. `raichle:cbv`) using the **spin permutation test**.
+- **Resampling** the source map to surface space (fsaverage or civet) and density (< 164k) of target map if necessary.
+- **Comparing** the **evolutionary expansion map** (`hill2010:evoexp`) with a set of **target maps** (e.g. `raichle:cbv`) using the **spin permutation test** (Alexander-Bloch et al. 2018).
 - **Computing** correlation coefficients (Pearson’s \( r \)) and spin-based \( p \)-values to evaluate statistical significance while accounting for spatial autocorrelation.
+- **Plotting** the box plots of distribution of spin test correlations along with observed correlation for each pair of comparison.
 
 ## About Neuromaps
 
