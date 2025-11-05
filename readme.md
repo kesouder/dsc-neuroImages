@@ -1,6 +1,7 @@
 # DSC Capstone Quarter 1 Project: Reproducing Evolutionary Expansion Map vs. Target Maps of Various Brain Structures Using the Neuromaps Toolbox
 
 ### Co-Authors: Kevin Huang, Kevin Souder
+
 This repository reproduces analyses from the **[neuromaps](https://www.nature.com/articles/s41592-022-01625-w)** framework — a standardized system for comparing human brain maps across modalities, spaces, and scales.  
 Our capstone project uses **neuromaps** to evaluate how surfaced-based **human evolutionary cortical expansion** relates to other cortical features such as cerebral blood volume, myelination, and functional gradients, using the **spin test** for non-parametric spatial null modeling.
 
@@ -97,3 +98,9 @@ By default, data are stored at:
    **NeuroImage, 223**, 117346.  
    [https://doi.org/10.1016/j.neuroimage.2020.117346](https://doi.org/10.1016/j.neuroimage.2020.117346)  
    _Provides Functional Homology (FChomology) and Evolutionary Homology (evoexp) maps._
+
+9. **Reardon, P. K., Seidlitz, J., Vandekar, S., Liu, S., Patel, R., Park, M. T. M., Alexander-Bloch, A., Clasen, L. S., Blumenthal, J. D., Lalonde, F. M., & others. (2018).**  
+   _Normative brain size variation and brain shape diversity in humans._  
+   **Science, 360**(6394), 1222–1227.  
+   [https://doi.org/10.1126/science.aar2578](https://doi.org/10.1126/science.aar2578)  
+   _Corresponds to the `scalingpnc` and `scalingnih` dataset in CIVET 41k space._
