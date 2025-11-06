@@ -67,7 +67,7 @@ By default, data are stored at:
    _Similar patterns of cortical expansion during human development and evolution._  
    **Proceedings of the National Academy of Sciences (PNAS), 107**(29), 13135–13140.  
    [https://doi.org/10.1073/pnas.1001229107](https://doi.org/10.1073/pnas.1001229107)
-
+   _Provdies Evolutionary Expansion source map, and developmental expansion target map._
 4. **Vaishnavi, S. N., Vlassenko, A. G., Rundle, M. M., Snyder, A. Z., Mintun, M. A., & Raichle, M. E. (2010).**  
    _Regional aerobic glycolysis in the human brain._  
    **Proceedings of the National Academy of Sciences (PNAS), 107**(41), 17757–17762.  
@@ -86,14 +86,31 @@ By default, data are stored at:
    [https://doi.org/10.1073/pnas.1608282113](https://doi.org/10.1073/pnas.1608282113)  
    _Provides functional gradient maps 1–3 used in the comparison._
 
-7. **Sydnor, V. J., Larsen, B., Bassett, D. S., Alexander-Bloch, A., Fair, D. A., Liston, C., Mackey, A. P., Milham, M. P., Pines, A., Roalf, D. R., Seidlitz, J., Xu, T., Raznahan, A., Satterthwaite, T. D., & Graham, A. M. (2021).**  
+7. **Markello, R. D., Spreng, R. N., Luh, W. M., Anderson, K. M., Ge, T., Holmes, A. J., & Mišić, B. (2021).**  
+   _Deconstructing the human connectome: Sensory, transmodal, and association networks are organized along distinct gradients of gene expression._  
+   **Nature Neuroscience, 24**, 1255–1265.  
+   [https://doi.org/10.1038/s41593-021-00815-8](https://doi.org/10.1038/s41593-021-00815-8)  
+   _Source for the Allen Human Brain Atlas gene-expression-derived gradients._
+
+8. **Sydnor, V. J., Larsen, B., Bassett, D. S., Alexander-Bloch, A., Fair, D. A., Liston, C., Mackey, A. P., Milham, M. P., Pines, A., Roalf, D. R., Seidlitz, J., Xu, T., Raznahan, A., Satterthwaite, T. D., & Graham, A. M. (2021).**  
    _Neurodevelopment of the association cortices: Patterns, mechanisms, and implications for psychopathology._  
    **Neuron, 109**(18), 2820–2846.e7.  
    [https://doi.org/10.1016/j.neuron.2021.06.016](https://doi.org/10.1016/j.neuron.2021.06.016)  
    _Associated with the SAaxis map of cortical surface area._
 
-8. **Xu, T., Dong, H.-M., Zhang, S., Zuo, X.-N., & Milham, M. P. (2020).**  
+9. **Xu, T., Dong, H.-M., Zhang, S., Zuo, X.-N., & Milham, M. P. (2020).**  
    _Cross-species functional alignment reveals evolutionary hierarchy within the connectome._  
    **NeuroImage, 223**, 117346.  
    [https://doi.org/10.1016/j.neuroimage.2020.117346](https://doi.org/10.1016/j.neuroimage.2020.117346)  
    _Provides Functional Homology (FChomology) and Evolutionary Homology (evoexp) maps._
+
+10. **Reardon, P. K., Seidlitz, J., Vandekar, S., Liu, S., Patel, R., Park, M. T. M., Alexander-Bloch, A., Clasen, L. S., Blumenthal, J. D., Lalonde, F. M., & others. (2018).**  
+    _Normative brain size variation and brain shape diversity in humans._  
+    **Science, 360**(6394), 1222–1227.  
+    [https://doi.org/10.1126/science.aar2578](https://doi.org/10.1126/science.aar2578)  
+    _Corresponds to the Allometric Scaling (PNC) and Allometric Scaling (NIH) dataset in CIVET 41k space._
+11. **Mueller, S., Wang, D., Fox, M. D., Yeo, B. T. T., Sepulcre, J., Sabuncu, M. R., Shafee, R., Lu, J., & Liu, H. (2013).**  
+    _Individual variability in functional connectivity architecture of the human brain._  
+    **Neuron, 77**(3), 586–595.  
+    [https://doi.org/10.1016/j.neuron.2012.12.028](https://doi.org/10.1016/j.neuron.2012.12.028)  
+    _Provides the intersubject functional variability map._
