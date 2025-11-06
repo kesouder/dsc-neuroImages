@@ -1,0 +1,4 @@
+include README.rst LICENSE requirements.txt
+recursive-include neuromaps/datasets/data *
+include versioneer.py
+include neuromaps/_version.py
