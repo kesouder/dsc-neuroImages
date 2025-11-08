@@ -4,6 +4,8 @@
 This repository reproduces analyses from the **[neuromaps](https://www.nature.com/articles/s41592-022-01625-w)** framework — a standardized system for comparing human brain maps across modalities, spaces, and scales.  
 Our capstone project uses **neuromaps** to evaluate how surfaced-based **human evolutionary cortical expansion** relates to other cortical features such as cerebral blood volume, myelination, and functional gradients, using the **spin test** for non-parametric spatial null modeling.
 
+Our code is in 'main_code.ipynb'
+
 ## Purpose of this Repository
 
 This repo provides reproducible code for:
