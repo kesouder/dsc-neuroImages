@@ -4,7 +4,17 @@
 This repository reproduces analyses from the **[neuromaps](https://www.nature.com/articles/s41592-022-01625-w)** framework — a standardized system for comparing human brain maps across modalities, spaces, and scales.  
 Our capstone project uses **neuromaps** to evaluate how surfaced-based **human evolutionary cortical expansion** relates to other cortical features such as cerebral blood volume, myelination, and functional gradients, using the **spin test** for non-parametric spatial null modeling.
 
-Our code is in 'main_code.ipynb'
+### Our Code
+Our workflow is in 'main_code.ipynb'. <br> This implements our entire project.
+<br><br>
+'full_spin_workflow.py' contains our main function that implements the Alexander Bloch spin test.
+<br><br>
+'full_randomize_workflow.py' contains the main function that implements the random permutation test. This is used to compare with Bloch's method and to highlight the importance of spatial autocorrelation.
+<br><br>
+'visualizations_functions.py' contains all the functions use for visualizations. This includes our main summary table which shows the multiple tests correction results, our function for creating a box plot for all the brain maps, and lastly the function that plots the brain maps.
+<br><br>
+The rest of the file in this repo were downloaded during the installation of neuromaps. See below how to download neuromaps toolbox.
+
 
 ## Purpose of this Repository
 

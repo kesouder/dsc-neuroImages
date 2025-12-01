@@ -1,11 +1,23 @@
+import neuromaps
 from neuromaps import nulls, datasets, images
 from neuromaps.stats import compare_images
+from neuromaps.images import load_data
 from neuromaps import resampling
 from nilearn import plotting
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 import time
+import visualizations_functions as vf
+
 target_maps = [
+    {'source':'abagen', 'desc':'genepc1', 'space':'fsaverage', 'den':'10k'},
+    {'source':'hcps1200', 'desc':'myelinmap', 'space':'fsLR', 'den':'32k'},
+    {'source':'hcps1200', 'desc':'thickness', 'space':'fsLR', 'den':'32k'},
+    {'source':'hill2010', 'desc':'devexp', 'space':'fsLR', 'den':'164k'},
+    {'source':'margulies2016', 'desc':'fcgradient01', 'space':'fsLR', 'den':'32k'},
+    {'source':'mueller2013', 'desc':'intersubjvar', 'space':'fsLR', 'den':'164k'},
+
     {'source':'raichle', 'desc':'cbf', 'space':'fsLR', 'den':'164k'},
     {'source':'raichle', 'desc':'cbv', 'space':'fsLR', 'den':'164k'},
     {'source':'raichle', 'desc':'cmr02', 'space':'fsLR', 'den':'164k'},
@@ -14,6 +26,8 @@ target_maps = [
     {'source':'reardon2018', 'desc':'scalingpnc', 'space':'civet', 'den':'41k'}
 ]
 source_map = {'source':'hill2010', 'desc':'evoexp', 'space':'fsLR', 'den':'164k'}
+
+# Full implementation of the Alexander Bloch Spin Test
 def full_spin_test(src: dict, trg: dict):
     src_paper, src_title, src_space, src_den = src.values()
     trg_paper, trg_title, trg_space, trg_den = trg.values()
@@ -58,7 +72,8 @@ def full_spin_test(src: dict, trg: dict):
     )
     end = time.perf_counter()
     time_elapsed = end - start
-    results_dict = {'target map':trg_title, 
+    formal_name = vf.map_names.get(trg_title)
+    results_dict = {'target map':formal_name, 
                 'r_emp':r, 
                 'p_spin':p, 
                 'nulls':null,
@@ -66,7 +81,13 @@ def full_spin_test(src: dict, trg: dict):
                }
     return results_dict
 
-results = []
-for target_map in target_maps:
-    results.append(full_spin_test(source_map, target_map))
+if __name__ == "__main__":
+    results = []
+    for target_map in target_maps:
+        results.append(full_spin_test(source_map, target_map))
+    vf.make_multiTest_table(pd.DataFrame(results), alpha=0.05, p_col='p_spin', label_col='target map')
+    vf.plot_box_plot(results)
 
+    # # uncomment this section to plot brain maps
+    # for trg_map in target_maps:
+    #     vf.plot_brain_map(trg_map, vf.map_names, vf.brain_map_settings)
